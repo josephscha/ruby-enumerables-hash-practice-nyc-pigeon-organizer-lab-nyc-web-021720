@@ -4,10 +4,10 @@ def nyc_pigeon_organizer(data)
   data.each do |attributes, value|
     value.each do |attribute_value, pigeon_names|
       pigeon_names.each do |name|
-        if pigeons_list[name] == false 
+        if pigeons_list[name] == nil 
           pigeons_list[name] = {}
         end 
-        if pigeons[name][attributes] == false 
+        if pigeons[name][attributes] == nil
           pigeons_list[name][attributes] = []
         end 
         pigeons_list[name][attributes] << attrivute_value.to_s
