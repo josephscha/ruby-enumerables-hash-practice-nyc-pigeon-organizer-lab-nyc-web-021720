@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   pigeons_list = {}
   data.each do |attributes, value|
     value.each do |attribute_value, pigeon_names|
-      pigeon.each do |name|
+      pigeon_names.each do |name|
         if pigeons_list[name] == false 
           pigeons_list[name] = {}
         end 
