@@ -10,5 +10,5 @@ def nyc_pigeon_organizer(data)
         if pigeons[name][attributes] == false 
           pigeons_list[name][attributes] = []
         end 
-        pigeons_list[name][attributes] <<
+        pigeons_list[name][attributes] << attrivute_value.to_s
 end
