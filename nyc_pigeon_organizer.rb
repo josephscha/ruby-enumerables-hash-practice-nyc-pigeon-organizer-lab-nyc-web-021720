@@ -7,10 +7,10 @@ def nyc_pigeon_organizer(data)
         if pigeons_list[name] == nil 
           pigeons_list[name] = {}
         end 
-        if pigeons[name][attributes] == nil
+        if pigeons_list[name][attributes] == nil
           pigeons_list[name][attributes] = []
         end 
-        pigeons_list[name][attributes] << attrivute_value.to_s
+        pigeons_list[name][attributes] << attribute_value.to_s
       end 
     end 
   end
