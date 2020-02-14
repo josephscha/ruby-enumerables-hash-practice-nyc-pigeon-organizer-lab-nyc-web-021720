@@ -4,5 +4,11 @@ def nyc_pigeon_organizer(data)
   date.each do |attributes, value|
     value.each do |attribute_value, pigeon_names|
       pigeon.each do |name|
-        pigeons_list[name] ||
+        if pigeons_list[name] == false 
+          pigeons_list[name] = {}
+        end 
+        if pigeons[name][attributes] == false 
+          pigeons_list[name][attributes] = []
+        end 
+        pigeons_list[name][attributes] <<
 end
